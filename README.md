@@ -53,10 +53,11 @@ $ npm run start:prod
 - multer 
 
 ## Environment
+```bash
   DB_TYPE=postgres
   DB_HOST=localhost
   DB_PORT=5432
   DB_USERNAME=postgres
   DB_PASSWORD=1234
   DB_DATABASE=credilinq-demo
-
+```
