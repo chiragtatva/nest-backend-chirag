@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type SmeHealthModel {
+  id: Int!
+  companyUEN: String!
+  companyName: String!
+  fullName: String!
+  position: String!
+  email: String!
+  reEmail: String!
+  contact: String!
+  documents: [String!]
+  isConditionsAccepted: Boolean!
+}
+
+type Query {
+  smeApplications: [SmeHealthModel!]!
+}
+
+type Mutation {
+  createSmeHealth(smeHealthInput: CreateSmeHealthDto1!): SmeHealthModel!
+  uploadFile(files: [Upload!]!, smeHealthInput: CreateSmeHealthDto1!): SmeHealthModel!
+}
+
+input CreateSmeHealthDto1 {
+  companyUEN: String!
+  companyName: String!
+  fullName: String!
+  position: String!
+  email: String!
+  reEmail: String!
+  contact: String!
+  documents: [String!]
+  isConditionsAccepted: Boolean!
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
